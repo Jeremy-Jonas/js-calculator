@@ -9,40 +9,41 @@
   <meta name="author" content="Jeremy Jonas">
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
   <div class="calculator">
       <div class="row">
-          <input type="text" disabled="disabled" class="screen" id="display"/>
+          <button disabled class="screen" id="display"></button>
       </div>
       <div class="row">
-          <button>Clear</button>
+          <button onclick="reset()">Clear</button>
       </div>
       <div class="row">
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="divide">÷</button>
+        <button class="num" id="seven" onclick="digit(7)">7</button>
+        <button class="num" id="eight" onclick="digit(8)">8</button>
+        <button class="num" id="nine" onclick="digit(9)">9</button>
+        <button class="operator" id="divide" onclick="operator('/')">÷</button>
       </div>
       <div class="row">
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="multiply">X</button>   
+        <button class="num" id="four" onclick="digit(4)">4</button>
+        <button class="num" id="five" onclick="digit(5)">5</button>
+        <button class="num" id="six" onclick="digit(6)">6</button>
+        <button class="operator" id="multiply" onclick="operator('*')">X</button>   
       </div>
       <div class="row">
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="subtract">-</button>   
+        <button class="num" id="one" onclick="digit(1)">1</button>
+        <button class="num" id="two" onclick="digit(2)">2</button>
+        <button class="num" id="three" onclick="digit(3)">3</button>
+        <button class="operator" id="subtract" onclick="operator('-')">-</button>   
       </div>
       <div class="row">
-        <button id="zero">0</button>
-        <button id="decimal">.</button>
-        <button id="equals">=</button>
-        <button id="add">+</button>   
+        <button class="num" id="zero" onclick="digit(0)">0</button>
+        <button class="num" id="decimal" onclick="digit('.')">.</button>
+        <button id="equals" onclick="calculate()">=</button>
+        <button class="operator" id="add" onclick="operator('+')">+</button>   
       </div>
   </div>
 
