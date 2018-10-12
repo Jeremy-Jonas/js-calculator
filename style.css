@@ -24,15 +24,17 @@ button{
 }
 
 .operator{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: rgb(7, 187, 247);
     color: yellow;
-    font-weight: bolder
+    font-weight: bolder;
+    font-size: 15px
 }
 
 #equals{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: crimson;
     color: whitesmoke;
-    font-weight: bolder
+    font-weight: bolder;
+    font-size: 15px
 }

@@ -1,7 +1,7 @@
 var inputVal = '';
 var total = 0;
 var currentOperation = '+';
-refreshDisplay();
+document.onload = refreshDisplay;
 
 function digit(num) {
     inputVal += num;
