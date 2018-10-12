@@ -26,19 +26,19 @@ function operator(operation) {
 function updateTotal () {
     switch (currentOperation){
         case '+':
-            var temp = total + parseFloat(inputVal);
+            var temp = parseFloat(total) + parseFloat(inputVal);
             total = temp.toString();
             break;
         case '-':
-            var temp = total - parseFloat(inputVal);
+            var temp = parseFloat(total) - parseFloat(inputVal);
             total = temp.toString();
             break;
         case '*':
-            var temp = total * parseFloat(inputVal);
+            var temp = parseFloat(total) * parseFloat(inputVal);
             total = temp.toString();
             break;
         case '/':
-            var temp = total / parseFloat(inputVal);
+            var temp = parseFloat(total) / parseFloat(inputVal);
             total = temp.toString();
             break;
     } 
