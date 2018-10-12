@@ -1,5 +1,5 @@
 var inputVal = '';
-var total = '0';
+var total = 0;
 var currentOperation = '+';
 refreshDisplay();
 
@@ -22,26 +22,26 @@ function operator(operation) {
     }
 }
 
+
 function updateTotal () {
     switch (currentOperation){
         case '+':
-            var temp = parseFloat(total) + parseFloat(inputVal);
+            var temp = total + parseFloat(inputVal);
             total = temp.toString();
             break;
         case '-':
-            var temp = parseFloat(total) - parseFloat(inputVal);
+            var temp = total - parseFloat(inputVal);
             total = temp.toString();
             break;
         case '*':
-            var temp = parseFloat(total) * parseFloat(inputVal);
+            var temp = total * parseFloat(inputVal);
             total = temp.toString();
             break;
         case '/':
-            var temp = parseFloat(total) / parseFloat(inputVal);
+            var temp = total / parseFloat(inputVal);
             total = temp.toString();
             break;
     } 
-
 }
 
 function calculate() {
